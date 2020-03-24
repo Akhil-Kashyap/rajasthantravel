@@ -249,9 +249,8 @@ button.navbar-toggle.collapsed {
 	height: auto;
 	text-align: center;
 	color: white;
-	background: url("landingpagedesign.jpg") no-repeat top center scroll;
+	background: url("landingpagedesign.jpg") no-repeat center;
 	background-size: cover;
-	-o-background-size: cover;
 }
 
 .intro .intro-body {
@@ -953,8 +952,10 @@ footer a:visited footer a:focus {
 
 @media only screen and (max-width: 480px) {
 	.brand-heading {
-		font-size: 70px;
-		margin-top: 20%;
+		font-size: 18px;
+		margin-top: 5%;
+		margin-left: 65%;
+		padding: 2px;
 	}
 	.col-exp {
 		margin-top: 15%;
