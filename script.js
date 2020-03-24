@@ -65,7 +65,7 @@ window.onload = function() {
 	// INJECT CSS
 	var css = document.createElement('style');
 	css.type = 'text/css';
-	css.innerHTML = '.txt-rotate > .wrap { border-right: 10px solid #40E0D0 }';
+	css.innerHTML = '.txt-rotate > .wrap { border-right: 2px solid #000000 }';
 	document.body.appendChild(css);
 };
 
