@@ -882,9 +882,10 @@ footer a:visited footer a:focus {
 	}
 
 	.intro .intro-body .intro-text {
-		font-size: 15px;
+		font-size: 12px;
 		width: 40%;
 		margin-left: 65%;
+		font-weight: 200;
 	}
 	.col-exp {
 		margin-top: 15%;
