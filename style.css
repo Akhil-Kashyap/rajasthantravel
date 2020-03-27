@@ -4,7 +4,21 @@ Please do not claim this website as your own. You don't have to give me credit b
 
 @font-face {
 	font-family: prakrat;
-	src: url(prakrta_.ttf);
+	src: url(./font/prakrta_.ttf);
+}
+
+@font-face {
+	font-family: poppins;
+	src: url(./font/poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+	font-family: kalra;
+	src: url(./font/Karla-Bold.ttf);
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
@@ -21,7 +35,7 @@ h2 {
 	color: #ffa700;
 	font-weight: 700;
 	font-size: 50px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: poppins;
 	text-transform: lowercase;
 }
 
@@ -46,7 +60,8 @@ h2:hover:after {
 h3,
 h4,
 h5 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: kalra;
+	font-size: 15px;
 }
 
 /* SCROLL TO TOP ARROW */
@@ -116,7 +131,7 @@ h5 {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	background-image: url(http://marinamarques.pt/img/preloader.gif);
+	background-image: url("./images/car.gif");
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: -100px 0 0 -100px;
@@ -170,7 +185,7 @@ h5 {
 	height: auto;
 	text-align: center;
 	color: white;
-	background: url("landingpagedesign.jpg") no-repeat center;
+	background: url("./images/landingpagedesign.jpg") no-repeat center;
 	background-size: cover;
 }
 
@@ -286,11 +301,11 @@ span.city {
 
 /*/ start about /*/
 
-#about-me {
+#about {
 	margin-top: 20px;
 }
 
-#about-me h2 {
+#about h2 {
 	font-weight: 700;
 	margin-top: 22px;
 	padding-bottom: 10px;
@@ -299,6 +314,8 @@ span.city {
 
 .about-intro-text p {
 	float: right;
+	font-family: kalra;
+	font-size: 20px;
 }
 
 .about-intro-text span {
@@ -448,175 +465,14 @@ div.button-social a:hover {
 	font-size: 60px;
 }
 
+.stats .fas {
+	color: #ffa700;
+	font-size: 60px;
+}
+
 /*/ end count stats /*/
 
 /*/ end about /*/
-
-/*/ start about work experience /*/
-
-#experience {
-	margin-top: 20px;
-}
-
-#experience h2 {
-	font-weight: 700;
-	margin-top: 22px;
-	padding-bottom: 10px;
-	text-align: center;
-}
-
-.timeline-label h4 {
-	margin-top: 0;
-	font-size: 30px;
-	color: #ffa700;
-	padding: 16px 0px;
-	font-weight: 700;
-}
-
-.timeline-label p {
-	color: #696969;
-	padding: 8px 0px;
-	line-height: 27px;
-}
-
-.button-group-li {
-	cursor: pointer;
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-}
-
-.timeline-label a {
-	text-decoration: none;
-}
-
-.text-timeline {
-	background: #40e0d0;
-	color: #fff;
-	font-size: 18px;
-	height: 40px;
-	padding: 0 25px;
-	line-height: 40px;
-}
-
-.icon-li {
-	font-size: 20px;
-	width: 40px;
-	height: 40px;
-	line-height: 30px;
-	box-sizing: border-box;
-	border: 4px solid #40e0d0;
-	border-left: none;
-	-webkit-transition: 600ms -webkit-transform ease-in-out;
-	transition: 600ms -webkit-transform ease-in-out;
-	transition: 600ms transform ease-in-out;
-	transition: 600ms transform ease-in-out, 600ms -webkit-transform ease-in-out;
-	-webkit-transform: rotateY(90deg);
-	transform: rotateY(90deg);
-	-webkit-transform-origin: left;
-	transform-origin: left;
-	color: #40e0d0;
-	background: #fff;
-	text-align: center;
-}
-
-.button-group-li:hover .icon-li {
-	-webkit-transform: rotateY(0deg);
-	transform: rotateY(0deg);
-}
-
-.button-group-li {
-	-webkit-perspective: 200px;
-	perspective: 200px;
-	-webkit-perspective-origin: calc(100% - 40px);
-	perspective-origin: calc(100% - 40px);
-}
-
-.timeline-label {
-	padding-left: 7%;
-	margin-top: 2%;
-}
-
-.col-exp {
-	margin-top: 2%;
-}
-
-.timeline .timeline-experience {
-	position: relative;
-	float: left;
-	margin-left: 32px;
-	padding-left: 64px;
-	border-left: 2px solid #ccc;
-}
-
-.timeline .timeline-experience-info h5 {
-	margin-top: 0;
-	margin-bottom: 0.333em;
-	font-size: 18px;
-	color: #40e0d0;
-	font-weight: 700;
-}
-
-.timeline .timeline-experience-info .timeline-role {
-	font-size: 16px;
-	color: #ffa700;
-	font-weight: 600;
-}
-
-.timeline .timeline-experience-info p {
-	font-size: 12px;
-	color: #333;
-	line-height: 27px;
-}
-
-.timeline time {
-	display: block;
-	width: 65px;
-	color: #ccc;
-	text-align: center;
-	font-weight: 700;
-}
-
-.timeline .timeline-experience-img,
-.timeline .timeline-experience-info,
-.timeline .timeline-experience-info h5,
-.timeline .timeline-experience-info .role,
-.timeline .timeline-experience-info p {
-	clear: none;
-}
-
-.timeline .timeline-experience .timeline-circle {
-	position: absolute;
-	top: 16px;
-	left: -13px;
-	display: block;
-	width: 19px;
-	height: 19px;
-	border: 3px solid #ccc;
-	border-radius: 50%;
-	background-color: #f5f5f5;
-}
-
-.timeline .timeline-experience-img {
-	float: left;
-	width: 64px;
-	height: 64px;
-}
-
-.timeline .timeline-experience-img img {
-	width: 100%;
-}
-
-.timeline .timeline-experience-info {
-	margin-left: 87px;
-}
-
-.timeline-experience-info p {
-	margin-top: 10px;
-	margin-bottom: 20px;
-}
-
-/*/ end about work experience /*/
 
 /*/ end about /*/
 
@@ -901,3 +757,213 @@ footer a:visited footer a:focus {
 		margin-bottom: 15%;
 	}
 }
+
+/* start Time city we are present*/
+
+.white-stripe {
+	background: #fff;
+	text-align: center;
+	padding: 35px 0;
+}
+.white-stripe p {
+	margin-bottom: 0;
+}
+.white-stripe.arrow {
+	position: relative;
+}
+.white-stripe.arrow::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #fff;
+	clear: both;
+	margin-left: -20px;
+	z-index: 10;
+}
+.timeline {
+	position: relative;
+	padding: 100px 0;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+.timeline .row {
+	margin-bottom: 50px;
+}
+@media only screen and (min-width: 768px) {
+	.timeline .row {
+		margin-bottom: 30px;
+	}
+}
+.timeline::before {
+	/* this is the vertical line */
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -2px;
+	height: 100%;
+	width: 3px;
+	background: #ddd;
+	z-index: -2;
+}
+.timeline .country-block {
+	padding: 50px 0;
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: #fff;
+	background: rgba(84, 84, 84, .6);
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.timeline .country-block i {
+	content: '';
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+
+	-moz-transition: background-size 0.3s;
+	-webkit-transition: background-size 0.3s;
+	transition: background-size 0.3s;
+}
+.timeline .country-block i.jp {
+	background-image: url('./images/jaipur.jpg');
+}
+.timeline .country-block i.vt {
+	background-image: url('./images/udaipur.jpg');
+}
+.timeline .country-block i.cb {
+	background-image: url('./images/ajmer.jpg');
+}
+.timeline .country-block i.th {
+	background-image: url('./images/delhi.jpg');
+}
+
+@media only screen and (min-width: 768px) {
+	.timeline .country-block {
+		width: 48%;
+		margin-right: 2%;
+	}
+	.timeline .country-block::before,
+	.timeline .country-block::after {
+		content: '';
+		position: absolute;
+		right: -1px;
+		height: 50%;
+		padding-left: 3%;
+		background: #f2f2f2;
+		-ms-transform-origin: 100% 0;
+		-webkit-transform-origin: 100% 0;
+		transform-origin: 100% 0;
+	}
+	.timeline .country-block::before {
+		bottom: 50%;
+		-ms-transform: skewY(45deg);
+		-webkit-transform: skewY(45deg);
+		transform: skewY(45deg);
+	}
+	.timeline .country-block::after {
+		top: 50%;
+		-ms-transform: skewY(-45deg);
+		-webkit-transform: skewY(-45deg);
+		transform: skewY(-45deg);
+	}
+	.timeline .country-block.reverse {
+		margin-left: 2%;
+		margin-right: 0;
+	}
+	.timeline .country-block.reverse::before,
+	.timeline .country-block.reverse::after {
+		left: -1px;
+		right: auto;
+		-ms-transform-origin: 0 100%;
+		-webkit-transform-origin: 0 100%;
+		transform-origin: 0 100%;
+	}
+	.timeline .country-block.reverse::before {
+		bottom: 50%;
+		-ms-transform: skewY(-45deg);
+		-webkit-transform: skewY(-45deg);
+		transform: skewY(-45deg);
+	}
+	.timeline .country-block.reverse::after {
+		top: 50%;
+		-ms-transform: skewY(45deg);
+		-webkit-transform: skewY(45deg);
+		transform: skewY(45deg);
+	}
+}
+.timeline a:hover,
+.timeline a:focus {
+	text-decoration: none;
+}
+.timeline a:hover .country-block {
+	background: rgba(9, 37, 57, .7);
+	color: #dfa903;
+}
+.timeline a:hover .country-block i {
+	background-size: 110%;
+}
+.timeline .date-block > div {
+	position: relative;
+	font-family: 'Satisfy', cursive;
+	background-color: #fff;
+	padding: 10px 30px 10px 30px;
+	border: 2px solid #7d7d7d;
+	display: inline-block;
+	margin-top: 15px;
+	color: black;
+	font-size: 2rem;
+	font-weight: 600;
+}
+@media only screen and (min-width: 768px) {
+	.timeline .date-block > div {
+		margin-top: 50px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.timeline .date-block::before {
+		content: '';
+		position: absolute;
+		top: 60px;
+		left: -10px;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		border: 4px solid #7d7d7d;
+		background: #f2f2f2;
+		box-shadow: 0 0 0 5px #f2f2f2;
+		z-index: 10;
+	}
+	.timeline .date-block::after {
+		content: '';
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 50%;
+		height: 3px;
+		background: #ddd;
+		z-index: -1;
+	}
+	.timeline .date-block.reverse::before {
+		right: -10px;
+		left: auto;
+	}
+	.timeline .date-block.reverse::after {
+		right: 0;
+		left: auto;
+	}
+}
+
+/* end Time city we are present*/
