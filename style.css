@@ -507,13 +507,20 @@ div.button-social a:hover {
 
 .portfolio-details h3 {
 	color: #ffa700;
-	font-weight: 700;
-	font-size: 25px;
+	font-weight: 600;
+	font-size: 19px;
 	font-family: 'Montserrat', sans-serif;
 }
 
 .portfolio-details p {
-	font-size: 14px;
+	font-size: 18px;
+	font-family: kalra;
+	padding-left: 25px;
+	text-align: left;
+}
+
+.portfolio-details ul {
+	display: table;
 }
 
 ul.portfolio-tags {
@@ -608,7 +615,12 @@ div.button-weblink {
 	text-transform: lowercase;
 }
 
-#services .fa {
+#services .far {
+	font-size: 60px;
+	color: #ffa700;
+}
+
+#services .fas {
 	font-size: 60px;
 	color: #ffa700;
 }
@@ -967,3 +979,28 @@ footer a:visited footer a:focus {
 }
 
 /* end Time city we are present*/
+
+.info {
+	font-family: kalra;
+	font-size: 18px;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+@media screen and (max-width: 480px) {
+	.info {
+		font-size: 15px;
+	}
+	.portfolio-details ul {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.portfolio-details p {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+	}
+}
