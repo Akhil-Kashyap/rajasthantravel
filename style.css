@@ -12,17 +12,12 @@ Please do not claim this website as your own. You don't have to give me credit b
 	src: url(./font/poppins/Poppins-Bold.ttf);
 }
 
-@font-face {
-	font-family: kalra;
-	src: url(./font/Karla-Bold.ttf);
-}
-
 html {
 	scroll-behavior: smooth;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	width: 100%;
 	height: 100%;
@@ -35,8 +30,14 @@ h2 {
 	color: #ffa700;
 	font-weight: 700;
 	font-size: 50px;
-	font-family: poppins;
+	font-family: 'Raleway', sans-serif;
 	text-transform: lowercase;
+}
+
+@media screen and (max-width: 480px) {
+	h2 {
+		font-size: 30px;
+	}
 }
 
 h2:after {
@@ -60,7 +61,7 @@ h2:hover:after {
 h3,
 h4,
 h5 {
-	font-family: kalra;
+	font-family: 'Raleway', sans-serif;
 	font-size: 15px;
 }
 
@@ -156,7 +157,7 @@ h5 {
 .topnav ul.navbar-nav li a:hover,
 .topnav ul.navbar-nav li a:focus {
 	background: #ffa700;
-	color: white;
+
 	border-radius: 5%;
 }
 
@@ -314,7 +315,7 @@ span.city {
 
 .about-intro-text p {
 	float: right;
-	font-family: kalra;
+	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
 }
 
@@ -456,18 +457,18 @@ div.button-social a:hover {
 	text-align: center;
 	font-size: 35px;
 	font-weight: 700;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	text-transform: lowercase;
 }
 
 .stats .fa {
-	color: #ffa700;
-	font-size: 60px;
+	color: BLACK;
+	font-size: 40px;
 }
 
 .stats .fas {
-	color: #ffa700;
-	font-size: 60px;
+	color: black;
+	font-size: 40px;
 }
 
 /*/ end count stats /*/
@@ -509,12 +510,12 @@ div.button-social a:hover {
 	color: #ffa700;
 	font-weight: 600;
 	font-size: 19px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 .portfolio-details p {
 	font-size: 18px;
-	font-family: kalra;
+	font-family: 'Raleway', sans-serif;
 	padding-left: 25px;
 	text-align: left;
 }
@@ -531,7 +532,7 @@ ul.portfolio-tags {
 li.portfolio-tag {
 	list-style-type: none;
 	font-size: 9px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	color: #40e0d0;
 	display: inline;
@@ -609,7 +610,7 @@ div.button-weblink {
 }
 
 #services h3 {
-	color: #40e0d0;
+	color: #ffa700;
 	font-size: 22px;
 	font-weight: bold;
 	text-transform: lowercase;
@@ -617,12 +618,12 @@ div.button-weblink {
 
 #services .far {
 	font-size: 60px;
-	color: #ffa700;
+	color: black;
 }
 
 #services .fas {
-	font-size: 60px;
-	color: #ffa700;
+	font-size: 50px;
+	color: black;
 }
 
 #services .rotate:hover {
@@ -981,7 +982,7 @@ footer a:visited footer a:focus {
 /* end Time city we are present*/
 
 .info {
-	font-family: kalra;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	padding-right: 5%;
 	padding-left: 5%;
@@ -995,6 +996,7 @@ footer a:visited footer a:focus {
 		display: table;
 		margin-left: auto;
 		margin-right: auto;
+		font-size: 15px;
 	}
 
 	.portfolio-details p {
@@ -1002,5 +1004,23 @@ footer a:visited footer a:focus {
 		margin-left: auto;
 		margin-right: auto;
 		padding-left: 0;
+		font-size: 15px;
 	}
+	.about-intro-text p {
+		font-size: 15px;
+		margin-top: 15px;
+	}
+}
+
+/* .img-responsive {
+	box-shadow: 10px 10px 5px #ccc;
+	-moz-box-shadow: 10px 10px 5px #ccc;
+	-webkit-box-shadow: 10px 10px 5px #ccc;
+	-khtml-box-shadow: 10px 10px 5px #ccc;
+} */
+
+.img-responsive {
+	-webkit-filter: drop-shadow(5px 5px 5px #222222);
+	filter: drop-shadow(5px 5px 5px #222222);
+	border-radius: 5px;
 }
